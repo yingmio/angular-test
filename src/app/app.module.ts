@@ -16,8 +16,8 @@ import * as AllIcons from "@ant-design/icons-angular/icons";
 import { DemoNgZorroAntdModule } from "./ng-zorro-antd.module";
 
 import { AppComponent } from "./app.component";
-import { HomeComponent } from './home/home.component';
-
+import { HomeComponent } from "./home/home.component";
+import { AppRoutingModule } from "./app-routing.module";
 registerLocaleData(en);
 
 const antDesignIcons = AllIcons as {
@@ -37,9 +37,10 @@ const icons: IconDefinition[] = Object.keys(antDesignIcons).map(
     DemoNgZorroAntdModule,
     BrowserAnimationsModule,
     ScrollingModule,
-    DragDropModule
+    DragDropModule,
+    AppRoutingModule
   ],
-  declarations: [AppComponent,HomeComponent],
+  declarations: [AppComponent, HomeComponent],
   bootstrap: [AppComponent],
   providers: [
     { provide: NZ_I18N, useValue: en_US },
