@@ -17,11 +17,11 @@ import { HomeComponent } from "./home/home.component";
 const routes: Routes = [
   { path: "", redirectTo: "/home", pathMatch: "full" }, // 根路径默认跳转至首页
   // { path: 'login', component: LoginComponent }, // 登录页面
-  { path: "home", component: HomeComponent } // home页面
   // { path: 'index', component: IndexComponent, pathMatch: 'full'},
   // { path: 'index-hadoop', component: IndexHadoopComponent, pathMatch: 'full'},
   // { path: 'error', component: ErrorHandlerComponent }, // error页面
   // { path: '**', component: ErrorHandlerComponent  } // 404找不到页面跳转error页面
+  { path: "home", component: HomeComponent } // home页面
 ];
 
 @NgModule({
